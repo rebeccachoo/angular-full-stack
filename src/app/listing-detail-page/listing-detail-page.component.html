@@ -1,1 +1,14 @@
-<p>listing-detail-page works!</p>
+<div class="content-box">
+  <a routerLink="/listings">
+    <button>Back</button>
+  </a>
+
+  <div>
+    <h2>{{ listing.name }}</h2>
+    <p>{{ listing.description }}</p>
+    <div>$ {{ listing.price }}</div>
+    <a routerLink="/contact/{{ listing.id }}">
+      <button>Contact Seller</button>
+    </a>
+  </div>
+</div>
